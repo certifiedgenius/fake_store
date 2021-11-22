@@ -1,0 +1,375 @@
+/* -------------------------------------------------------------------------- */
+/*                             Master   shift + alt + x                       */
+/* -------------------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.body {
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                            Header for all pages                            */
+/* -------------------------------------------------------------------------- */
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+
+.nav-area {
+    list-style: none;
+}
+
+
+.nav-area li {
+    display: inline-block;
+    padding: 3.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.nav-area li a {
+    transition: .3s;
+    color: black;
+    text-decoration: none;
+}
+
+
+.nav-area li a:hover {
+    color: #d22938;
+}
+
+
+button {
+    background-color: #f9423d;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 1rem;
+
+    width: 100px;
+    height: 40px;
+
+    margin-left: 1rem;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+
+}
+
+
+button:hover {
+    background-color: #337af1;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Header Responsive                             */
+/* -------------------------------------------------------------------------- */
+
+
+/* Iphone 5/SE */
+@media screen and (max-width: 568px) {
+    .headerContainer {
+        padding: 1rem;
+    }
+
+    .nav-area li {
+        display: inline-block;
+        padding: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: .9rem;
+    }
+
+    button {
+        margin-top: 1rem;
+        margin-left: .8rem;
+
+        font-size: 12px;
+        width: 60px;
+        height: 40px;
+    }
+
+    .header-title {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   footer                                   */
+/* -------------------------------------------------------------------------- */
+.footer-container {
+    background-color: #1a1a1a;
+    padding: 4rem 0 2rem 0;
+}
+
+
+.footer {
+    width: 80%;
+    height: 40vh;
+
+    background-color: #1a1a1a;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+
+.footer-heading h2 {
+    margin-bottom: 2rem;
+}
+
+
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+
+.footer-heading a:hover {
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+
+.footer-email-form h2 {
+    margin-bottom: 2rem;
+}
+
+
+#footer-email {
+    width: 250px;
+    height: 40px;
+
+    border-radius: 4px;
+
+    outline: none;
+    border: none;
+
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+
+    font-size: 1rem;
+}
+
+
+#footer-email::placeholder {
+    color: #b1b1b1;
+}
+
+
+#footer-email-btn {
+    width: 100px;
+    height: 40px;
+
+    border-radius: 4px;
+    background-color: #f9423d;
+
+    outline: none;
+    border: none;
+    color: #fff;
+
+    font-size: 1rem;
+}
+
+
+#footer-email-btn:hover {
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              Responsive footer                             */
+/* -------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 1174px) {
+    .footer {
+        height: 1000px;
+    }
+
+
+    .footer-email-form {
+        margin-top: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 1150px) {
+    .footer {
+        height: 1000px;
+    }
+
+
+    .footer-email-form {
+        margin-top: 4rem;
+    }
+}
+
+
+/* Ipad mini */
+@media (min-width: 568px) and (max-width: 1024px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1;
+        height: 800px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .footer-heading {
+        display: grid;
+        grid-template-columns: 2;
+    }
+
+    .footer-3 {
+        display: grid;
+        width: 100%;
+
+    }
+
+    .footer-4 {
+        margin-left: 1.2rem;
+    }
+
+
+    .footer-email-form {
+        margin-top: .5rem;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Iphone 5/SE */
+@media (max-width: 568px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1;
+        height: 800px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .footer-3 {
+        display: grid;
+        width: 100%;
+    }
+
+    .footer-4 {
+        margin-left: 1.2rem;
+    }
+
+
+    .footer-email-form {
+        margin-top: .5rem;
+        margin-bottom: 30px;
+    }
+}
