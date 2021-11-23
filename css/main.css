@@ -148,50 +148,19 @@ button:hover {
 
 
 
-header{
-    background-color:black;
-    max-width:100%;
-    margin: auto;
-}
-
-h1 {
-    text-align: center;
-    margin: 3rem;
-}
-
-h2,h1 {
-    font-family: 'Roboto', sans-serif; 
-}
-
- ul,li,a{ 
-   list-style: none;
-   text-decoration: none;
-   padding-top:0.3rem;
-   padding: 0;
-   transition: 3s;
-   display: inline-block;
-}
-
-li{
-    padding:0.1rem;
-    margin:0.3rem;
-}
-
-a{
-    font-size: 1.2em;
-    margin-top: 0.4rem;
-    padding: 0.3rem;
-    font-family: 'Lato', sans-serif;
-}
 
 
 
 
-footer{
-    background-color: black;
-    color: white;
-    border:none;
-}
+
+
+
+
+
+
+
+
+
 
 
 
