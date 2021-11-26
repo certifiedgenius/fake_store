@@ -5,13 +5,13 @@ fetch('/data/data.json')
     }).then((completedata) => {
         let data = "";
         completedata.map((values) => {
-            data += `<div class="card">
+            data += `<div class="card product-under">
             <h1 class="title">${values.title}</h1>
             <img src="${values.image}" alt="img" class="images">
             <p class="description">${values.description}</p>
             <p class="category">${values.category}</p>
-            <p class="price">${values.price} SEK</p>
-            <a class="add-cart" href="#">Add To Cart</a>
+            <p class="price">$${values.price}</p>
+            <button class="btnCart addToCart" data-product-id="${values.id}">Add To Cart</button>
         </div>`
 
 
