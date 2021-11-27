@@ -484,7 +484,23 @@ button:hover {
     font-size: 18px;
 }
 
-
+/* Search Bar */
+.input-container {
+    text-align: center;
+    margin: auto;
+}
+input[type=search] {
+    width: 27%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: 2px solid black;
+    color: black;
+    box-shadow: 0 0 6px 3px black;
+}
+::placeholder {
+	color: black;
+	font-size: 14px;
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */

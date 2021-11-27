@@ -26,12 +26,13 @@ const searchProduct = async searchText => {
 const outputHtml = matches => {
     if(matches.length > 0) {
         const html = matches.map(match => `
-            <div class="card card-body mb-1">
-            <h4>${match.title}</h4>
-            <img src="${match.image}">
-            <p class="text-primary">${match.description}</p>
-            <p class="text-primary">${match.category}</p>
-            <small>${match.price} SEK</small>
+            <div class="card product-under input-container">
+            <h1 class="title">${match.title}</h1>
+            <img src="${match.image}" alt="img" class="images">
+            <p class="description">${match.description}</p>
+            <p class="category">${match.category}</p>
+            <p class="price">$${match.price}</p>
+            <button class="btnCart addToCart" data-product-id="${match.id}">Add To Cart</button>
             </div>
         `
         ).join('');
