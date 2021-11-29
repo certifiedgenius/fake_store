@@ -7,3 +7,11 @@
 # run 'npm init' in the terminal
 
 # run npx eslint --init
+
+<!--
+	men's clothing
+	jewelery
+	electronics
+	women's clothing
+
+-->
