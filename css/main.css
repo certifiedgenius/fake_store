@@ -257,6 +257,24 @@ button:hover {
 }
 
 
+/* Price Filter */
+.filter-condition {
+    padding: 1.25rem;
+    height: 6.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.filter-condition select {
+    width: 7.5rem;
+    padding: 0rem 0rem 0rem 0.625rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                              Header Responsive                             */
 /* -------------------------------------------------------------------------- */
