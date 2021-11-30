@@ -4,7 +4,7 @@ const cartSumPrice = document.querySelector('#sum-prices');
 const products = document.querySelectorAll('.product-under');
 
 
-const countTheSumPrice = function(){
+const countTheSumPrice = function () {
 	let sumPrice = 0;
 	productsInCart.forEach(product => {
 		sumPrice += product.price;
@@ -12,8 +12,8 @@ const countTheSumPrice = function(){
 	return sumPrice;
 }
 
-const updateShoppingCartHTML = function(){
-	if(productsInCart.length > 0){
+const updateShoppingCartHTML = function () {
+	if (productsInCart.length > 0) {
 		let result = productsInCart.map(product => {
 			return `
 				<!-- <li class="buyItem">
@@ -34,8 +34,7 @@ const updateShoppingCartHTML = function(){
 		parentElement.innerHTML = result.join('');
 		document.querySelector('.checkout').classList.remove('hidden');
 		cartSumPrice.innerHTML = "$" + countTheSumPrice();
-	}
-	else{
+	} else {
 		document.querySelector('.checkout').classList.add('hidden');
 		parentElement.innerHTML = '<h4 class="empty">Your shopping cart is empty</h4>';
 		cartSumPrice.innerHTML = "";
@@ -58,7 +57,7 @@ function updateProductsInCart(product) {
 
 products.forEach(product => {
 	product.addEventListener('click', (e) => {
-		if(e.target.classlist.contains('addToCart')) {
+		if (e.target.classlist.contains('addToCart')) {
 			const productID = e.target.dataset.productID;
 			const productName = product.querySelector('.title').innerHTML;
 			const productPrice = product.querySelector('.price').innerHTML;
