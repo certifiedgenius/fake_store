@@ -512,12 +512,11 @@ nav .navbar-top {
 }
 
 input[type=search] {
-    width: 21%;
     padding: 8px 10px;
     margin: 8px 0;
-    border: 0rem solid black;
     color: black;
-    box-shadow: 0 0 6px 3px black;
+    display: inline-block;
+    width: 20%;
 }
 
 ::placeholder {
