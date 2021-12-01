@@ -414,6 +414,27 @@ nav .navbar-top {
 
 }
 
+/* BUTTON */
+.buttonContact {
+    width: 100px;
+    height: 40px;
+
+    border-radius: 4px;
+    background-color: #f9423d;
+
+    outline: none;
+    border: none;
+    color: #fff;
+
+    font-size: 1rem;
+}
+
+
+.buttonContact:hover {
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
 
 .h1 {
     font-weight: normal;
@@ -446,13 +467,37 @@ nav .navbar-top {
     border: 0.1px solid black;
 }
 
+/* Input Text Message in Contact Page */
+.input-text-message {
+    width: 100%;
+    border: 0.1px solid black;
+}
+
+
+/* BUTTON */
 .send-btn {
-    font-size: 18px;
-    width: 80px;
-    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+
+    border-radius: 4px;
+    background-color: #f9423d;
+
+    outline: none;
+    border: none;
+    color: #fff;
+
+    font-size: 1rem;
+
     font: inherit;
     cursor: pointer;
 }
+
+.send-btn:hover {
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
 
 /* Email Address, Full Name, Message etc..  */
 .label {
