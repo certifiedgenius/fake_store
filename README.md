@@ -1,8 +1,5 @@
+# Developed By Simon, Ali, Erik och Mugeera
 # fake_store
-
-
-# Seprate the .cards and #cards from each other so we can style them sepratly
-
 
 # run 'npm init' in the terminal
 
@@ -14,4 +11,5 @@
 	electronics
 	women's clothing
 
+    Seprate the .cards and #cards from each other so we can style them sepratly
 -->
