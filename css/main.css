@@ -499,7 +499,13 @@ button:hover {
     height: 40px;
     border: 0.1px solid black;
 }
-
+.send-btn {
+	font-size: 18px;
+	width: 80px;
+	border-radius: 8px;
+	font: inherit;
+	cursor: pointer;
+}
 
 /* Email Address, Full Name, Message etc..  */
 .label {
@@ -512,7 +518,7 @@ button:hover {
     margin: auto;
 }
 input[type=search] {
-    width: 27%;
+    width: 21%;
     padding: 8px 10px;
     margin: 8px 0;
     border: 0rem solid black;
