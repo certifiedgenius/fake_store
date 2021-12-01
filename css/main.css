@@ -24,7 +24,6 @@
     align-items: center;
     padding: 30px 10%;
     border-bottom: 2px solid #dbdbdb;
-    background-color: lightgrey;
 }
 
 
@@ -52,6 +51,7 @@
 
 .nav-area li a:hover {
     color: #d22938;
+    cursor: pointer;
 }
 
 /* logo , my account and shopping cart */
@@ -75,9 +75,9 @@ nav .navbar-top {
 /* Cart */
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
-#cart{
+#cart {
     display: none;
-  }
+}
 
 .container {
     max-width: 900px;
@@ -148,7 +148,7 @@ nav .navbar-top {
     border: none;
     border-radius: .3em;
     font-weight: bold;
-  }
+}
 
 .btn-danger:hover {
     background-color: #CC4C4C;
@@ -209,6 +209,30 @@ nav .navbar-top {
 
 .btn-primary:hover {
     background-color: #2D9CDB;
+}
+
+
+/* Categories */
+.category-area {
+    list-style: none;
+    display: inline-block;
+    padding: 0.21875rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.categories {
+    display: block;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+    white-space: normal;
+    word-break: break-word;
+    margin: 0rem 75rem;
+    text-align: center;
+    width: auto;
+    padding-top: 1.6875rem;
+    cursor: pointer;
 }
 
 
@@ -273,7 +297,7 @@ nav .navbar-top {
 }
 
 /* all the product cards on index page and THE POPUP*/
-.card{
+.card {
     background-color: white;
     width: 400px;
     height: auto;
@@ -284,21 +308,23 @@ nav .navbar-top {
     margin-top: 2em;
 }
 
-.images{
+.images {
     width: 200px;
     height: 200px;
 }
 
-.title{
+.title {
     font-size: 1.3rem;
 }
 
-.category,.price{
+.category,
+.price {
     font-weight: bold;
     text-transform: capitalize;
     margin: 1em;
     font-size: 1.2rem;
 }
+
 .description {
     display: none;
 }
@@ -312,7 +338,8 @@ nav .navbar-top {
 
 
 
-.category,.price{
+.category,
+.price {
     font-weight: bold;
     text-transform: capitalize;
     margin: 1em;
@@ -344,12 +371,13 @@ nav .navbar-top {
 }
 
 
-@media screen and (max-width: 430px){
-    #cards{
+@media screen and (max-width: 430px) {
+    #cards {
         display: flex;
         flex-wrap: wrap;
     }
-    .card{
+
+    .card {
         width: 340px;
     }
 }
@@ -358,7 +386,7 @@ nav .navbar-top {
 /* tablet */
 
 @media screen and (min-width: 768px) {
-    #cards{
+    #cards {
         display: flex;
         flex-wrap: wrap;
     }
@@ -368,7 +396,7 @@ nav .navbar-top {
 
 /* desktop */
 @media screen and (min-width: 992px) {
-    #cards{
+    #cards {
         display: flex;
         flex-wrap: wrap;
     }
@@ -383,7 +411,7 @@ nav .navbar-top {
     width: 100%;
     margin: 0 auto;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 
@@ -417,12 +445,13 @@ nav .navbar-top {
     height: 40px;
     border: 0.1px solid black;
 }
+
 .send-btn {
-	font-size: 18px;
-	width: 80px;
-	border-radius: 8px;
-	font: inherit;
-	cursor: pointer;
+    font-size: 18px;
+    width: 80px;
+    border-radius: 8px;
+    font: inherit;
+    cursor: pointer;
 }
 
 /* Email Address, Full Name, Message etc..  */
@@ -434,7 +463,9 @@ nav .navbar-top {
 .input-container {
     text-align: center;
     margin: auto;
+    margin-block-start: 1.2rem;
 }
+
 input[type=search] {
     width: 21%;
     padding: 8px 10px;
@@ -443,9 +474,10 @@ input[type=search] {
     color: black;
     box-shadow: 0 0 6px 3px black;
 }
+
 ::placeholder {
-	color: black;
-	font-size: 14px;
+    color: black;
+    font-size: 14px;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -542,66 +574,3 @@ input[type=search] {
     cursor: pointer;
     transition: all 0.4s ease-out;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
