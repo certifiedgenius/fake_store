@@ -1,4 +1,4 @@
-# Developed By Simon, Ali, Erik och Mugeera
+# Developed By Simon, Ali, Erik & Mugeera
 # fake_store
 
 # run 'npm init' in the terminal
