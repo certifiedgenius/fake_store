@@ -72,191 +72,144 @@ nav .navbar-top {
     height: 75px;
 }
 
-/* container of my account and shopping cart */
-.navbar-top > div {
-    margin-right: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-}
+/* Cart */
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 
-/* My account text*/
-.navbar-top .shopping-cart {
-    margin-left: 10px;
-    font-size: 1.4rem;
-}
-
-.navbar-top .shopping-cart {
-    margin-left: 10px;
-    font-size: 1.4rem;
-}
-
-.shopping-cart .sum-prices {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-#sum-prices {
-    padding-left: 5px;
-}
-
-.sum-prices h6 {
-    font-size: 0.9rem;
-}
-
-.shoppingCartButton {
-    cursor: pointer;
-}
-
-.shoppingCartButton:hover,
-.account:hover * {
-    color: #0e5e53;
-}
-
-.productsOnCart {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none;
-    overflow: hidden;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    overscroll-behavior: contain;
-    background-color: #202020;
-    width: 300px;
-    height: 500px;
-    color: #f0f0f0;
-    z-index: 15;
-    position: fixed;
-    top: 20px;
-    right: 0;
-    text-align: center;
-    animation: fade 1s;
-}
-
-.productsOnCart::-webkit-scrollbar {
+#cart{
     display: none;
-}
+  }
 
-.productsOnCart::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-}
-
-.productsOnCart ul {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.productsOnCart .buyItem {
-    border-bottom: #aaa 1px solid;
-    width: 90%;
-    padding: 10px 0;
-    display: flex;
-}
-
-.productsOnCart img {
-    width: 90px;
-}
-
-.productsOnCart .top {
-    display: flex;
-    background-color: #616161;
-    text-align: center;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-
-.productsOnCart > .checkout {
-    font-size: 0.9rem;
-    margin: 20px auto;
-    border: none;
-    background-color: #297075;
-    padding: 10px 20px;
-    color: #eee;
-    cursor: pointer;
-}
-
-.productsOnCart .empty {
-    justify-self: center;
-    margin: 150px auto;
-}
-
-.hide {
-    display: none;
-    visibility: none;
-}
-
-.overlay {
-    overflow: hidden;
-    display: inline-block;
-    content: "";
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.top button {
-    background: transparent;
-    border: none;
-    font-size: 1.5rem;
-    margin-left: 10px;
-    color: #c24c37;
-    cursor: pointer;
-}
-
-.top button:hover {
-    color: #e40505;
-}
-
-.top h3 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.container {
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0 1.5em;
 }
 
+.content-section {
+    margin: 1em;
+}
 
-.buttonContact {
-    background-color: #f9423d;
-    color: #fff;
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
 
-    text-decoration: none;
-    font-size: 1rem;
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
 
-    width: 100px;
-    height: 40px;
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
 
-    margin-left: 1rem;
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
     border: none;
-    border-radius: 4px;
-    outline: none;
+    border-radius: .3em;
+    font-weight: bold;
+  }
 
-    cursor: pointer;
-    transition: all 0.4s ease-out;
-
+.btn-danger:hover {
+    background-color: #CC4C4C;
 }
 
-
-button:hover {
-    background-color: #337af1;
-    transition: all 0.4s ease-out;
-    cursor: pointer;
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
 }
 
-/* Categories */
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2D9CDB;
+}
 
 
 
@@ -349,48 +302,13 @@ button:hover {
 .description {
     display: none;
 }
-.btn {
-    margin-top: 20px;
-}
+
 
 .hidden {
     display: none;
 }
 
-/* Buttons style */
-.btnCart {
-    background-color: #96c8cc;
-    padding: 15px 50px 15px 30px;
-    color: #141414;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    font-size: 1.1rem;
-    position: relative;
-}
 
-.btnCart:active {
-    box-shadow: none;
-}
-
-.btnCart > .fa-angle-right {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: right 0.5s;
-}
-
-.btnCart:hover .fa-angle-right {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 20px;
-}
-
-.btnCart i {
-    margin: 0 5px;
-}
 
 
 
