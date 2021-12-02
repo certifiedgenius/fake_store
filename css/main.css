@@ -199,16 +199,26 @@ nav .navbar-top {
     font-size: 1.75em;
 }
 
+/* BUTTON Product Add to cart*/
 .btn-primary {
-    color: white;
-    background-color: #56CCF2;
+    width: 7.8125rem;
+    height: 2.5rem;
+
+    border-radius: 4px;
+    background-color: #f9423d;
+
+    outline: none;
     border: none;
-    border-radius: .3em;
-    font-weight: bold;
+    color: #fff;
+
+    font-size: 1rem;
 }
 
+
 .btn-primary:hover {
-    background-color: #2D9CDB;
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
 }
 
 
@@ -304,11 +314,11 @@ nav .navbar-top {
     background-color: white;
     width: 400px;
     height: auto;
-    box-shadow: 0 0 4px 3px black;
+    box-shadow: 0 0 1px 0px black;
     text-align: center;
     padding: 1.5em;
     margin-bottom: 2em;
-    margin-top: 2em;
+    margin-top: 1.2rem;
 }
 
 .images {
