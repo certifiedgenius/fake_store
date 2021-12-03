@@ -1,5 +1,5 @@
-// Allproducts box, with an Array inside
-let allProducts = [];
+let allProducts = []; 
+let completeData = [];
 
 
 // Fetch Catogory from json 
@@ -32,3 +32,6 @@ function sortByPriceFilter() {
     
     else (select === "Default")
 }
+
+
+completeData.sort();
