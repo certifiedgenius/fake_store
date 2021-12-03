@@ -1,8 +1,14 @@
 import {ready} from "./store.js"
 
+let completeData;
+
+
+
+
 fetch('/data/data.json')
     .then((data) => {
         return data.json();
+        
 
     }).then((completedata) => {
         let data = "";
@@ -16,7 +22,7 @@ fetch('/data/data.json')
             <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
         </div>`;
 
-
+            
 
             // Getting the table element
             var cards = document.getElementsByClassName("card");
@@ -527,11 +533,6 @@ fetch('/data/data.json')
 
 
 
-
-
-
-
-
                 document.body.appendChild(div);
 
 
@@ -545,15 +546,18 @@ fetch('/data/data.json')
         lightbox.addEventListener('click', e => {
             if (e.target !== e.currentTarget) return;
             lightbox.classList.remove('active');
-
+            
         });
-
-
-
-
-    ready();   
+        
+        
+        
+        
+        ready();   
     }).catch((err) => {
         console.log(err);
         
     });
     
+    completeData = [];
+
+    completeData.sort();
