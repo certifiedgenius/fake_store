@@ -80,11 +80,10 @@ nav .navbar-top {
 }
 
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 99%;
+    padding-right: 18.75rem;
+    padding-left: 18.75rem;
+    
 }
 
 .content-section {
