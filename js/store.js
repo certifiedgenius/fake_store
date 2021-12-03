@@ -1,4 +1,4 @@
-// Make store.js load in before app.js
+// Make app.js load in before store.js
 
 
 if (document.readyState == 'loading') {
