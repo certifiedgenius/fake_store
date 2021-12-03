@@ -1,3 +1,5 @@
+import {ready} from "./store.js"
+
 fetch('/data/data.json')
     .then((data) => {
         return data.json();
@@ -11,7 +13,7 @@ fetch('/data/data.json')
             <p class="description">${values.description}</p>
             <p class="category">${values.category}</p>
             <p class="price">$${values.price}</p>
-            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
         </div>`;
 
 
@@ -549,7 +551,9 @@ fetch('/data/data.json')
 
 
 
-
+    ready();   
     }).catch((err) => {
         console.log(err);
+        
     });
+    
