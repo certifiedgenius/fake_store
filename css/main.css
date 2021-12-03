@@ -529,6 +529,10 @@ nav .navbar-top {
     font-size: 18px;
 }
 
+
+
+
+
 /* Search Bar */
 .input-container {
     text-align: center;
@@ -548,6 +552,32 @@ input[type=search] {
     color: black;
     font-size: 14px;
 }
+
+
+/* BUTTON add to cart button in search bar*/
+.btnCart {
+    width: 100px;
+    height: 40px;
+
+    border-radius: 4px;
+    background-color: #f9423d;
+
+    outline: none;
+    border: none;
+    color: #fff;
+
+    font-size: 1rem;
+
+    font: inherit;
+    cursor: pointer;
+}
+
+.btnCart:hover {
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
