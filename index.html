@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
     <title>Fake Store</title>
 </head>
 
@@ -15,6 +19,7 @@
     <header>
         <div class="headerContainer">
             <div>
+
                 <h1 class="header-title">Fake Store</h1>
             </div>
 
@@ -39,31 +44,11 @@
 
 
 
-    <!-- Categories -->
-    <ol class="category-area">
-
-        <li class="categories" id="view-all-category">View All</li>
-        
-        
-        <li class="categories" id="women-category">Women</li>
-        
-        
-        <li class="categories" id="men-category">Men</li>
-        
-        
-        <li class="categories" id="jewelry-category">Jewelry</li>
-        
-        
-        <li class="categories" id="electronics-category">Electronics</li>
-        
-    </ol>
-
-
-
-
+    
     <!-- Search Bar -->
     <div class="input-container">
         <input type="search" id="search" placeholder="Search a Product...">
+
     </div>
     <div id="match-list"></div>
 
@@ -74,12 +59,10 @@
     <div class="filter-condition">
 
         <span>Sort By</span>
+        <button id="op0">Default</button>
+        <button id="op1">Low to high</button>
+        <button id="op2">High to low</button>
 
-        <select name="price" id="select">
-            <option value="Default">Featured</option>
-            <option value="Lowest-Price" id="op1">Lowest Price</option>
-            <option value="Highest-Price">Highest Price</option>
-        </select>
 
     </div>
 
@@ -89,6 +72,8 @@
     <!-- Products item card -->
     <article id="home">
         <div id="cards" class="shop-items"></div>
+        <div id="cards" class="shop-items-low"></div>
+        <div id="cards" class="shop-items-high"></div>
     </article>
 
 
@@ -97,13 +82,14 @@
     <!-- Cart -->
     <article id="cart" class="container content-section">
         <h2 class="section-header">CART</h2>
+
         <div class="cart-row">
             <span class="cart-item cart-header cart-column">ITEM</span>
             <span class="cart-price cart-header cart-column">PRICE</span>
             <span class="cart-quantity cart-header cart-column">QUANTITY</span>
         </div>
         <div class="cart-items">
-            
+
         </div>
         <div class="cart-total">
             <strong class="cart-total-title">Total</strong>
@@ -153,7 +139,7 @@
     </div>
 
 
-    
+
 
     <script type="module" src="js/app.js"></script>
     <script src="js/script.js"></script>

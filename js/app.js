@@ -2,7 +2,7 @@
 // Thank you for your purchase
 import {
     ready
-} from "./store.js"
+} from "./store.js";
 
 
 
@@ -17,7 +17,8 @@ fetch('/data/data.json')
     }).then((completedata) => {
         let data = "";
         completedata.map((values) => {
-            data += `<div class="shop-item card">
+            data += `
+            <div class="shop-item card">
             <h1 class="title">${values.title}</h1>
             <img src="${values.image}" alt="img" class="images">
             <p class="description">${values.description}</p>
@@ -25,6 +26,8 @@ fetch('/data/data.json')
             <p class="price">$${values.price}</p>
             <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
         </div>`;
+
+        
 
 
 
@@ -553,42 +556,59 @@ fetch('/data/data.json')
 
         });
 
-        let allProducts = completedata;
-        console.log(allProducts);
-
-
         // Sort By Price
         document.getElementById("op1").addEventListener("click", function (e) {
-            completedata.sort(function (a, b) {
+            let lowprice = completedata.sort(function (a, b) {
                 return a.price - b.price
             });
-            console.log(completedata);
-            /*     test.map((values) => {
-                testest += `<div class="shop-item card">
-                <h1 class="title">${values.title}</h1>
-                <img src="${values.image}" alt="img" class="images">
-                <p class="description">${values.description}</p>
-                <p class="category">${values.category}</p>
-                <p class="price">$${values.price}</p>
-                <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
-            </div>`
-                });
-                document.getElementById("cards").innerHTML = testest;
-               console.log(testest) */
+            document.querySelector(".shop-items").style.display = "none";
+            document.querySelector(".shop-items-high").style.display = "none";
+            document.querySelector(".shop-items-low").style.display = "flex";
+            lowprice.forEach(values => {
+
+                document.querySelector(".shop-items-low").innerHTML +=
+                    `<div class="shop-item card">
+            <h1 class="title">${values.title}</h1>
+            <img src="${values.image}" alt="img" class="images">
+            <p class="description">${values.description}</p>
+            <p class="category">${values.category}</p>
+            <p class="price">$${values.price}</p>
+            <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
+        </div>`
+            });
+
+
+
         });
 
+        // Sort By Price
+        document.getElementById("op2").addEventListener("click", function (e) {
+            let highprice = completedata.sort(function (a, b) {
+                return b.price - a.price
+            });
+            document.querySelector(".shop-items").style.display = "none";
+            document.querySelector(".shop-items-low").style.display = "none";
+            document.querySelector(".shop-items-high").style.display = "flex";
+            highprice.forEach(values => {
 
+                document.querySelector(".shop-items-high").innerHTML +=
+                    `<div class="shop-item card">
+                 <h1 class="title">${values.title}</h1>
+                 <img src="${values.image}" alt="img" class="images">
+                 <p class="description">${values.description}</p>
+                 <p class="category">${values.category}</p>
+                 <p class="price">$${values.price}</p>
+                 <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
+             </div>`
+            });
 
-        /* if (select === "Lowest-Price") {
-            allProducts.sort(function(a, b) {return a.price - b.price});
-        } else if (select === "Highest-Price") {
-            allProducts.sort((a, b) => a.price - b.price);
-        } else(select === "Default") */
+        });
 
-
-
-
-
+        document.getElementById("op0").addEventListener("click", function (e) {
+            document.querySelector(".shop-items").style.display = "flex";
+            document.querySelector(".shop-items-low").style.display = "none";
+            document.querySelector(".shop-items-high").style.display = "none";
+        });
 
         ready();
     }).catch((err) => {
