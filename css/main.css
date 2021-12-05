@@ -83,11 +83,11 @@ nav .navbar-top {
     width: 99%;
     padding-right: 18.75rem;
     padding-left: 18.75rem;
-    
+
 }
 
 .content-section {
-    margin: 1em;
+    margin-block-end: 14.1rem
 }
 
 .section-header {
@@ -205,7 +205,7 @@ nav .navbar-top {
     font-size: 1.1em;
 }
 
-.button-row{
+.button-row {
     display: flex;
     justify-content: space-around;
 }
@@ -280,6 +280,62 @@ nav .navbar-top {
     background: transparent;
     cursor: pointer;
 }
+
+
+/* Sort By Buttons Default */
+#op0 {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #f9423d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#op0:hover {
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+/* LOW TO HIGH BUTTON */
+#op1 {
+    width: 110px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #f9423d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#op1:hover {
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+/* HIGH TO LOW BUTTON */
+#op2 {
+    width: 110px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #f9423d;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#op2:hover {
+    background-color: #337af1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*                              Header Responsive                             */
