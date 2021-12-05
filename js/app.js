@@ -1,6 +1,10 @@
-import {ready} from "./store.js"
+// Cart function import from store.js
+// Thank you for your purchase
+import {
+    ready
+} from "./store.js"
 
-let completeData;
+
 
 
 
@@ -8,7 +12,7 @@ let completeData;
 fetch('/data/data.json')
     .then((data) => {
         return data.json();
-        
+
 
     }).then((completedata) => {
         let data = "";
@@ -22,7 +26,7 @@ fetch('/data/data.json')
             <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
         </div>`;
 
-            
+
 
             // Getting the table element
             var cards = document.getElementsByClassName("card");
@@ -546,18 +550,48 @@ fetch('/data/data.json')
         lightbox.addEventListener('click', e => {
             if (e.target !== e.currentTarget) return;
             lightbox.classList.remove('active');
-            
+
         });
-        
-        
-        
-        
-        ready();   
+
+        let allProducts = completedata;
+        console.log(allProducts);
+
+
+        // Sort By Price
+        document.getElementById("op1").addEventListener("click", function (e) {
+            completedata.sort(function (a, b) {
+                return a.price - b.price
+            });
+            console.log(completedata);
+            /*     test.map((values) => {
+                testest += `<div class="shop-item card">
+                <h1 class="title">${values.title}</h1>
+                <img src="${values.image}" alt="img" class="images">
+                <p class="description">${values.description}</p>
+                <p class="category">${values.category}</p>
+                <p class="price">$${values.price}</p>
+                <button class="btn btn-primary shop-item-button" type="button" data-id="${values.id}">ADD TO CART</button>
+            </div>`
+                });
+                document.getElementById("cards").innerHTML = testest;
+               console.log(testest) */
+        });
+
+
+
+        /* if (select === "Lowest-Price") {
+            allProducts.sort(function(a, b) {return a.price - b.price});
+        } else if (select === "Highest-Price") {
+            allProducts.sort((a, b) => a.price - b.price);
+        } else(select === "Default") */
+
+
+
+
+
+
+        ready();
     }).catch((err) => {
         console.log(err);
-        
-    });
-    
-    completeData = [];
 
-    completeData.sort();
+    });

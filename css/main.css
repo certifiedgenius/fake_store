@@ -205,11 +205,11 @@ nav .navbar-top {
     font-size: 1.1em;
 }
 
-.btn-purchase {
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+.button-row{
+    display: flex;
+    justify-content: space-around;
 }
+
 
 /* BUTTON Product Add to cart*/
 .btn-primary {

@@ -12,4 +12,6 @@
 	women's clothing
 
     Seprate the .cards and #cards from each other so we can style them sepratly
+
+	shift + alt + a to comment out the code
 -->

@@ -16,7 +16,7 @@ export function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-
+    document.getElementsByClassName('btn-empty')[0].addEventListener('click', emptyClicked)
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
@@ -28,6 +28,15 @@ if (document.readyState == 'loading') {
 
 
 // 
+function emptyClicked() {
+    alert('Cart emptied')
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    while (cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+    updateCartTotal()
+}
+
 function purchaseClicked() {
     alert('Thank you for your purchase')
     var cartItems = document.getElementsByClassName('cart-items')[0]
